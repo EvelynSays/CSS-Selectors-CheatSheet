@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Codecademy Cheatsheet Project</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">   
+    </head>
+
+    <body>
+        <h1>CSS Selector Specificity: A Cheat Sheet</h1>
+        <p id="explanation">CSS selector specificity determines which styles are applied to elements when there are conflicting style rules.<br>Specificity is calculated based on the type of selectors used in CSS.</p>
+        <div id="grid">
+            <div class="griditem">
+                <h2>Inline Style</h2>
+                <p><span class="standout">Inline styles</span> are considered the <span class="standout">most specific</span>, and will overwrite all other style types.</p>
+                    <code>
+                        &lt;h1 style="color: green;"&gt;This is an inline style&lt;/h1&gt;
+                    </code>
+            </div>
+            <div class="griditem">
+                <h2>ID Selectors</h2>
+                <p><span class="standout">ID Selectors</span> are the <span class="standout">most specific external style selectors</span>, and overwrite everything other than Inline Styles.</p>
+                    <code>
+                        #unique-id { 
+                            color: red; 
+                        }
+                    </code>
+            </div>
+            <div class="griditem">
+                <h2>Class Selectors</h2>
+                <p><span class="standout">Class Selectors</span> are less specific than <span class="standout">ID Selectors</span> and are used to define styles for multiple items on a page</p>
+                    <code>
+                        .class-name { 
+                            color: blue; 
+                        }
+                    </code>
+            </div>
+            <div class="griditem">
+                <h2>Attribute Selectors</h2>
+                <p><span class="standout">Attribute Selectors</span> are used to define styles for html elements with <span class="standout">specific attributes</span>, for example, input elements with the type "text".</p>
+                    <code>
+                        [type="text"]
+                    </code>
+            </div>
+            <div class="griditem">
+                <h2>Pseudo-Class Selectors</h2>
+                <p><span class="standout">Pseudo-class Selectors</span> are used to apply styles to elements based on their <span class="standout">state or position in a document</span>, such as changing the color of a link when the mouse hovers over it.</p>
+                    <code>
+                        a:hover {
+                            color: red;
+                        }
+                    </code>
+            </div>
+            <div class="griditem">
+                <h2>Type Selectors</h2>
+                <p><span class="standout">Type Selectors</span> are used to apply styles to <span class="standout">elements of a specific type</span> on a page, such as changing the font size for all paragraph elements on a page.</p>
+                    <code>
+                        p {
+                            font-size: 16px;}
+                    </code>
+            </div>
+            <div class="griditem">
+                <h2>Universal Selector</h2>
+                <p>The <span class="standout">Universal Selector</span> targets every element on the page, regardless of type, class or ID. It's often used to <span class="standout">reset default styles</span> or <span class="standout">apply styles globally.</span></p>
+                    <code>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    </code>
+            </div>            
+        </div>
+    </body>
+
+    <footer>
+        <p>Created by: <span class="standout">Joanna Evelyn Evans</span></p>
+        <p><a href="www.google.com">Source Code</a></p>
+</html>

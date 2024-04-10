@@ -1,0 +1,96 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 0 0 100px;
+    min-height: 100%;
+}
+
+h1 {
+    background-color: lightsteelblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.griditem p {
+    margin: 5px;
+    padding: 10px;
+    color: darkslategray;
+}
+
+a {
+    color: darkslateblue;
+}
+
+h1 {
+    color: darkslateblue;
+    border-bottom: 1px solid black;
+    font-family: 'Rubik Mono One';
+}
+
+h2 {
+    color: firebrick;
+    border-bottom: 1px solid black;
+    font-family: 'Kode Mono';
+}
+
+p {
+    font-family: "Space Mono";
+}
+
+#grid {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    max-width:100%;
+}
+
+#explanation {
+    font-size: 16px;
+    color: darkslategray;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+    
+.griditem {
+    border: 2px solid black;
+    min-width: 25%;
+    max-width: 25%;
+    min-height: 200px;
+    flex: 0 1 auto;
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightsteelblue;
+}
+
+.standout {
+    font-weight: bold;
+    font-style: italic;
+}
+
+code {
+    background-color: lightgray;
+    color: darkslategrey;
+    font-family: 'Kode Mono';
+}
+
+footer {
+    margin: 0, 10px, 20px, 10px;
+    background-color: lightsteelblue;
+    width: 100%;
+    color: darkslategray;
+}
